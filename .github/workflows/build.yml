@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         # Use these Java versions
-        java: [
+      java: [
           17,    # Current Java LTS & minimum supported by Minecraft
           21,    # Current Java LTS
         ]
