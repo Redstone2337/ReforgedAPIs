@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         # Use these Java versions
-      java: [
+        java: [
           17,    # Current Java LTS & minimum supported by Minecraft
           21,    # Current Java LTS
         ]
@@ -34,3 +34,8 @@ jobs:
       - name: build
         run: ./gradlew build
       - name: capture build artifacts
+        if: ${{ runner.os == 'Linux' && matrix.java == '21' }} # Only upload artifacts built from latest java on one OS
+        uses: actions/upload-artifact@v3
+        with:
+          name: Artifacts
+          path: build/libs/
