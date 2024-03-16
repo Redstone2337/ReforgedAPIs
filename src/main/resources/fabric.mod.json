@@ -3,7 +3,7 @@
 	"id": "reforged",
 	"version": "${version}",
 	"name": "Reforged API",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A Simple Prefix Module Library!",
 	"authors": [
 		"Redstone233"
 	],
