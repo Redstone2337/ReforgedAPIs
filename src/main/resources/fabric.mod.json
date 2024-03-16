@@ -5,11 +5,11 @@
 	"name": "Reforged API",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Redstone233"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://redstone2337200.github.io/",
+		"sources": "https://github.com/Redstone2337200/Reforged/"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/reforged/icon.png",
@@ -32,6 +32,11 @@
 			"environment": "client"
 		}
 	],
+	"custom": {
+    		"modmenu": {
+        	"badges": [ "library" ]
+    		}
+	},
 	"depends": {
 		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.4",
