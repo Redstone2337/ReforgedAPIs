@@ -1,0 +1,16 @@
+{
+    "commands.api.help.success": "执行命令 api 执行成功！",
+    "commands.api.help.fail": "执行命令 api 执行失败",
+    "commands.api.help.page.success": "执行命令 api 执行成功！",
+    "commands.api.help.page.fail": "执行命令 api 执行失败",
+    "commands.api.info.page.success": "执行命令 api 执行成功！",
+    "commands.api.info.page.fail": "执行命令 api 执行失败",
+    "commands.more.book.all.success": "执行命令 more 执行成功！",
+    "commands.more.book.all.fail": "执行命令 more 执行失败",
+    "commands.more.book.any.success": "执行命令 more 执行成功！",
+    "commands.more.book.any.fail": "执行命令 more 执行失败",
+    "commands.more.info.all.success": "执行命令 more 执行成功！",
+    "commands.more.info.all.fail": "执行命令 more 执行失败",
+    "commands.more.info.any.success": "执行命令 more 执行成功！",
+    "commands.more.info.any.fail": "执行命令 more 执行失败"
+}

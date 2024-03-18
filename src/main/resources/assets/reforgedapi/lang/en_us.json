@@ -1,0 +1,16 @@
+{
+    "commands.api.help.success": "Run commands api successful!",
+    "commands.api.help.fail": "Run commands api failed",
+    "commands.api.help.page.success": "Run commands api successful!",
+    "commands.api.help.page.fail": "Run commands api failed",
+    "commands.api.info.page.success": "Run commands api successful!",
+    "commands.api.info.page.fail": "Run commands api failed",
+    "commands.more.book.all.success": "Run commands more successful!",
+    "commands.more.book.all.fail": "Run commands more failed",
+    "commands.more.book.any.success": "Run commands more successful!",
+    "commands.more.book.any.fail": "Run commands more failed",
+    "commands.more.info.all.success": "Run commands more successful!",
+    "commands.more.info.all.fail": "Run commands more failed",
+    "commands.more.info.any.success": "Run commands more successful!",
+    "commands.more.info.any.fail": "Run commands more failed"
+}
