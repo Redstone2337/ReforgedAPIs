@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "reforgedapi",
 	"version": "${version}",
-	"name": "Reforged Api Mod",
+	"name": "Reforged API",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Redstone233"
