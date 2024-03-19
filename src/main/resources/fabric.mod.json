@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "reforged",
+	"id": "reforgedapi",
 	"version": "${version}",
 	"name": "Reforged Api Mod",
 	"description": "This is an example description! Tell everyone what your mod is about!",
