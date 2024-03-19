@@ -21,7 +21,7 @@ public class ReforgedAPICommands {
         }))).then(((LiteralArgumentBuilder)CommandManager.literal("help").executes((a) -> {
             return executeStopStep((ServerCommandSource)a.getSource());
         })).then(CommandManager.argument("page", IntegerArgumentType.integer()).executes((b) -> {
-            return executeStopPage((ServerCommandSource)b.getSource(),IntegerArgumentType.getInteger(b, "'page"));
+            return executeStopPage((ServerCommandSource)b.getSource(),IntegerArgumentType.getInteger(b, "page"));
         }))).then(((LiteralArgumentBuilder)CommandManager.literal("info").executes((c) -> {
             return executeStopStep((ServerCommandSource)c.getSource());
         })).then(CommandManager.argument("page", IntegerArgumentType.integer())).executes((d)->{
