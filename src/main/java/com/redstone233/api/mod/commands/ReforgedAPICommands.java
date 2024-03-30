@@ -4,6 +4,7 @@ import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.LiteralMessage;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
+import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.redstone233.api.mod.ApiCommandsText;
 
 import net.minecraft.entity.player.PlayerEntity;
@@ -45,7 +46,7 @@ public class ReforgedAPICommands {
         })))));
     }
 
-    private static int executeStopStep(ServerCommandSource source) {
+    private static int executeStopStep(ServerCommandSource source) throws CommandSyntaxException {
       ServerTickManager serverTickManager = source.getServer().getTickManager();
       boolean bl = serverTickManager.stopStepping();
       if (bl) {
@@ -59,7 +60,7 @@ public class ReforgedAPICommands {
       }
    }
 
-   private static int executeStopPage(ServerCommandSource source, int page) {
+   private static int executeStopPage(ServerCommandSource source, int page) throws CommandSyntaxException {
     PlayerEntity playerEntity = source.getPlayer();
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
@@ -83,7 +84,7 @@ public class ReforgedAPICommands {
     }
  }
 
- private static int executeStopInfo(ServerCommandSource source, int page) {
+ private static int executeStopInfo(ServerCommandSource source, int page) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
     if (bl) {
@@ -97,7 +98,7 @@ public class ReforgedAPICommands {
     }
  }
 
- private static int executeStopBookAll(ServerCommandSource source,PlayerEntity player) {
+ private static int executeStopBookAll(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
     if (bl) {
@@ -114,7 +115,7 @@ public class ReforgedAPICommands {
     }
  }
 
- private static int executeStopInfoAll(ServerCommandSource source,PlayerEntity player) {
+ private static int executeStopInfoAll(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
     if (bl) {
@@ -131,7 +132,7 @@ public class ReforgedAPICommands {
     }
  }
 
- private static int executeStopBookAny(ServerCommandSource source,PlayerEntity player) {
+ private static int executeStopBookAny(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
     if (bl) {
@@ -146,7 +147,7 @@ public class ReforgedAPICommands {
     }
  }
 
- private static int executeStopInfoAny(ServerCommandSource source,PlayerEntity player) {
+ private static int executeStopInfoAny(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
     if (bl) {
