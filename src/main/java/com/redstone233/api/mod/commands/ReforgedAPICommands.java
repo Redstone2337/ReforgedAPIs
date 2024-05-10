@@ -49,7 +49,7 @@ public class ReforgedAPICommands {
     private static int executeStopStep(ServerCommandSource source) throws CommandSyntaxException {
       ServerTickManager serverTickManager = source.getServer().getTickManager();
       boolean bl = serverTickManager.stopStepping();
-      if (bl) {
+      if (!bl) {
          source.sendFeedback(() -> {
             return Text.translatable("commands.api.help.success");
          }, true);
@@ -64,7 +64,7 @@ public class ReforgedAPICommands {
     PlayerEntity playerEntity = source.getPlayer();
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
-    if (bl) {
+    if (!bl) {
        source.sendFeedback(() -> {
           return Text.translatable("commands.api.help.page.success");
        }, true);
@@ -87,7 +87,7 @@ public class ReforgedAPICommands {
  private static int executeStopInfo(ServerCommandSource source, int page) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
-    if (bl) {
+    if (!bl) {
        source.sendFeedback(() -> {
           return Text.translatable("commands.api.info.page.success");
        }, true);
@@ -101,7 +101,7 @@ public class ReforgedAPICommands {
  private static int executeStopBookAll(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
-    if (bl) {
+    if (!bl) {
        source.sendFeedback(() -> {
           return Text.translatable("commands.more.book.all.success");
        }, true);
@@ -118,7 +118,7 @@ public class ReforgedAPICommands {
  private static int executeStopInfoAll(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
-    if (bl) {
+    if (!bl) {
        source.sendFeedback(() -> {
           return Text.translatable("commands.more.info.all.success");
        }, true);
@@ -135,7 +135,7 @@ public class ReforgedAPICommands {
  private static int executeStopBookAny(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
-    if (bl) {
+    if (!bl) {
        source.sendFeedback(() -> {
           return Text.translatable("commands.more.book.any.success");
        }, true);
@@ -150,7 +150,7 @@ public class ReforgedAPICommands {
  private static int executeStopInfoAny(ServerCommandSource source,PlayerEntity player) throws CommandSyntaxException {
     ServerTickManager serverTickManager = source.getServer().getTickManager();
     boolean bl = serverTickManager.stopStepping();
-    if (bl) {
+    if (!bl) {
        source.sendFeedback(() -> {
           return Text.translatable("commands.more.info.any.success");
        }, true);
